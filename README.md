@@ -30,3 +30,5 @@ export FLASK_ENV=development flask run
 this makes the program run with DEBUG mode - ON.
 
 ### Since the software is in development stage, imperfection exists.
+
+![](https://media.giphy.com/media/lrnclvgJlsyZSq2wni/200w_d.gif)
