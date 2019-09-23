@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SharkScout</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 </head>
 
@@ -20,11 +21,21 @@
             </div>
         </div>
     </section>
+
+    <div class="nes-field" style="width: 150px" >
+      <form method="POST">
+      <label for="name_field">No of packets</label>
+      <input type="text" name="packs" id="name_field" class="nes-input" placeholder="No. of packets">
+      <button type="button" class="nes-btn is-error">Enter</button>
+      </form>
+    </div>
     
     <div class="nes-container with-title is-centered">
         <p class="title" style="font-size: 100%">Device 1</p>
+        <br>
+        <span>f8:63:3f:eo:6f:91</span>
         <p>Total Data Used -  MB</p>
-        <p><span class="nes-text is-primary">APP 1</span></p>
+        <p><span class="nes-text is-primary">Google </span></p>
             <div class="nes-container is-rounded is-dark">
                 <p><div class="nes-table-responsive">
                     <table class="nes-table is-bordered is-centered">
@@ -64,7 +75,7 @@
                     </table>
                   </div></p>
             </div>
-        <p><span class="nes-text is-primary">APP 2</span></p>
+        <p><span class="nes-text is-primary">Amazon</span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -104,7 +115,7 @@
                 </table>
               </div></p>
         </div>
-        <p><span class="nes-text is-primary">APP 3</span></p>
+        <p><span class="nes-text is-primary">Reddit</span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -145,12 +156,13 @@
               </div></p>
         </div>
         <div class="nes-container with-title is-centered">
-            <p class="title" "><section class="icon-list">
+          <div class="animated slideInLeft delay-2s">
+            <p class="title" ><section class="icon-list">
                 <!-- Copyright Nintendo -->
-                <i class="nes-ash"></i>
-              </section>Live Packet Transfer</p>
+                <i class="nes-ash"></i></div>
+              </section>Total Protocols Analysed</p>
               <label for="textarea_field">Running..</label>
-              <textarea id="textarea_field" class="nes-textarea">nothing</textarea>
+              <textarea id="textarea_field" class="nes-textarea">{{filter1.msisummary}}</textarea>
           </div>
       </div>
       <br>
@@ -163,7 +175,7 @@
     <div class="nes-container is-dark with-title is-centered">
         <p class="title" style="font-size: 100%">Device 2</p>
         <p>Total Data Used - 10GB</p>
-        <p><span class="nes-text is-warning">APP 1</span></p>
+        <p><span class="nes-text is-warning">Google </span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -203,7 +215,7 @@
                 </table>
               </div></p>
         </div>
-        <p><span class="nes-text is-warning">APP 2</span></p>
+        <p><span class="nes-text is-warning">Amazon</span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -243,7 +255,7 @@
                 </table>
               </div></p>
         </div>
-        <p><span class="nes-text is-warning">APP 3</span></p>
+        <p><span class="nes-text is-warning">Reddit</span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -284,12 +296,14 @@
               </div></p>
         </div>
         <div class="nes-container with-title is-centered">
-            <p class="title" ><section class="icon-list">
-                <!-- Copyright Nintendo -->
-                <i class="nes-ash"></i>
-              </section>Live Packet Transfer</p>
-            <p>bla bla bla !!</p>
-          </div>
+            <div class="animated slideInLeft delay-2s">
+              <p class="title" ><section class="icon-list">
+                  <!-- Copyright Nintendo -->
+                  <i class="nes-ash"></i></div>
+                </section>Live Packet Transfer</p>
+                <label for="textarea_field">Running..</label>
+                <textarea id="textarea_field" class="nes-textarea">yo</textarea>
+            </div>
       </div>
       <br>
 
@@ -300,7 +314,7 @@
       <div class="nes-container with-title is-centered">
         <p class="title" style="font-size: 100%">Device 3</p>
         <p>Total Data Used - 10GB</p>
-        <p><span class="nes-text is-primary">APP 1</span></p>
+        <p><span class="nes-text is-primary">Google </span></p>
        <div class="nes-container is-rounded is-dark">
                 <p><div class="nes-table-responsive">
                     <table class="nes-table is-bordered is-centered">
@@ -340,7 +354,7 @@
                     </table>
                   </div></p>
             </div>
-        <p><span class="nes-text is-primary">APP 2</span></p>
+        <p><span class="nes-text is-primary">Amazon</span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -380,7 +394,7 @@
                 </table>
               </div></p>
         </div>
-        <p><span class="nes-text is-primary">APP 3</span></p>
+        <p><span class="nes-text is-primary">Reddit</span></p>
         <div class="nes-container is-rounded is-dark">
             <p><div class="nes-table-responsive">
                 <table class="nes-table is-bordered is-centered">
@@ -421,12 +435,14 @@
               </div></p>
         </div>
         <div class="nes-container with-title is-centered">
-            <p class="title" "><section class="icon-list">
-                <!-- Copyright Nintendo -->
-                <i class="nes-ash"></i>
-              </section>Live Packet Transfer</p>
-            <p>bla bla bla !!</p>
-          </div>
+            <div class="animated slideInLeft delay-2s">
+              <p class="title" ><section class="icon-list">
+                  <!-- Copyright Nintendo -->
+                  <i class="nes-ash"></i></div>
+                </section>Live Packet Transfer</p>
+                <label for="textarea_field">Running..</label>
+                <textarea id="textarea_field" class="nes-textarea">nothing</textarea>
+            </div>
       </div>
       <br>
 </body>
